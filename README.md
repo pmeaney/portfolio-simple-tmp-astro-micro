@@ -1,3 +1,15 @@
+
+# Portfolio - Simple template - Astro Micro
+
+Feb 02, 2026.
+
+
+---
+
+#### Original readme below
+
+Src: https://github.com/trevortylerlee/astro-micro
+
 # Introducing [Astro Micro 🔬](https://astro-micro.vercel.app/)
 
 Astro Micro is an accessible theme for Astro. It's a fork of [Mark Horn's](https://github.com/markhorn-dev) popular theme [Astro Nano](https://astro-nano-demo.vercel.app/). Like Nano, Micro comes with zero frameworks installed.
