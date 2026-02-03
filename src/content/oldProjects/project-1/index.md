@@ -16,9 +16,12 @@ repoURL: "https://gitlab.com/pmeaney/influxdbp-grafana-rpi/"
     <img src="/images-tool-logos/for-site/rpi.png" alt="Raspberry Pi" class="h-16 max-w-full object-contain" />
   </div>
 </div>
+
 ## Project Overview
 
 This project demonstrates a complete IoT monitoring system that collects real-world sensor data and displays it in a professional dashboard. The system uses a Raspberry Pi with a temperature and humidity sensor to gather environmental data, which is then processed, stored, and visualized through a web-based interface.
+
+<img src="/images-old-projects/grafana-dashboard.jpg" alt="Raspberry Pi" class="object-contain" />
 
 ## How It Works
 
