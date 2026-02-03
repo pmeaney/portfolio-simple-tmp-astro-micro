@@ -1,8 +1,10 @@
-
 # Portfolio - Simple template - Astro Micro
 
-Feb 02, 2026.
+Original source:
 
+- Template:
+  - Description: https://astro.build/themes/details/astro-micro/
+  - Github page: https://github.com/trevortylerlee/astro-micro
 
 ---
 

@@ -1,79 +1,22 @@
 ---
-title: "Astro Sphere"
-description: "Portfolio and blog build with astro."
-date: "03/18/2024"
-demoURL: "https://astro-sphere-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-sphere"
+title: "Vendure for eCommerce"
+description: "Exploring Vendure to prototype an eComemrce store"
+date: "01/07/2026"
+repoURL: "https://github.com/pmeaney/vendure-juniper010726/"
 ---
 
-![Astro Sphere](/astro-sphere.jpg)
+## Exploring using Vendure for consulting projects & side hustles
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on Mark Horn's personal website.
+In the Summer of 2025, I began exploring Content Management Systems and really liked PayloadCMS, a Typescript-based framework. However, PayloadCMS's ecommerce plugin is still in beta mode as of early 2026.
 
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
+So, after learning about [Vendure](https://vendure.io/) I began exploring its "my-shop" template. It looked well built, easy to figure out, and easy to get up and running.
 
-## 🚀 Deploy your own
+However, its template wasn't Containerized. I decided to take it upon myself to create a containerized template and set it up for production-ready CICD Deployment, a project I call [vendure-juniper010726](https://github.com/pmeaney/vendure-juniper010726/). (As a nature-lover decided to give my projects tree-species code names, for eventual blue-green deployment, using tree names instead of colors)
 
-<div class="flex gap-2">
-  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere">
-    <img src="/deploy_vercel.svg" />
-  </a>
-  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere">
-    <img src="/deploy_netlify.svg" />
-  </a>
-</div>
+On January 30, 2026 I released v2.0-- the Prototype Production version. Next up, I'll add:
 
-## 📋 Features
+- Additional security features to the Debian server
+- Placeholder products
+- Initial point-of-sale software accounts (Stripe, Paypal) for initial payment testing
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
-
-## 💯 Lighthouse score
-
-![Astro Sphere Lighthouse Score](/lighthouse-nano.jpg)
-
-## 🕊️ Lightweight
-
-All pages under 100kb (including fonts)
-
-## ⚡︎ Fast
-
-Rendered in ~40ms on localhost
-
-## 📄 Configuration
-
-The blog posts on the demo serve as the documentation and configuration.
-
-## 💻 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
-
-| Command                   | Action                                            |
-| :------------------------ | :------------------------------------------------ |
-| `npm install`             | Installs dependencies                             |
-| `npm run dev`             | Starts local dev server at `localhost:4321`       |
-| `npm run sync`            | Generates TypeScript types for all Astro modules. |
-| `npm run build`           | Build your production site to `./dist/`           |
-| `npm run preview`         | Preview your build locally, before deploying      |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`  |
-| `npm run astro -- --help` | Get help using the Astro CLI                      |
-| `npm run lint`            | Run ESLint                                        |
-| `npm run lint:fix`        | Auto-fix ESLint issues                            |
-
-## 🏛️ License
-
-MIT
+Once those items are working, I'll release v3.0 -- the Production Ready version. And if all goes according to plan, I'll have a simple dropshipping store side-hustle.

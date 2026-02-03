@@ -67,7 +67,8 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
                   mx-auto: centers the constrained photo on smaller screens
                   lg:max-w-none: removes size limit on large screens, lets it fill the 40% column
                   Note: for Square photo, use aspect-square . for 4/3, use aspect-[4/3] -->
-              <div
+              <!-- for 4/3 aspect photo -->
+              <!-- <div
                 class="mx-auto flex aspect-[4/3] max-w-lg items-center justify-center rounded-lg bg-gray-200 lg:max-w-none dark:bg-gray-700"
               >
                 <figure>
@@ -83,8 +84,82 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
                   </figcaption>
                 </figure>
               </div>
+               -->
+              <!-- For Square photo -->
+              <div
+                class="mx-auto flex aspect-square max-w-lg items-center justify-center rounded-lg bg-gray-200 lg:max-w-none dark:bg-gray-700"
+              >
+                <figure>
+                  <img
+                    src="/images-personal/patrick-building.jpg"
+                    alt="Patrick Meaney"
+                    class="h-full w-full rounded-lg object-cover"
+                  />
+                </figure>
+              </div>
             </div>
           </div>
+        </section>
+
+        <section class="animate space-y-4">
+          <h2 class="font-semibold text-black dark:text-white">
+            Professional Background
+          </h2>
+          <ul class="space-y-3 text-black/75 dark:text-white/75">
+            <li>
+              <strong class="text-black dark:text-white"
+                >DevOps Engineer & Technical Project Manager</strong
+              >
+              <span class="mt-1 block">
+                Led the largest CICD migration in company history at CDK Global,
+                migrating 200+ repositories worth $35M+ in product IP from
+                CircleCI to Github Actions. Managed cross-functional planning
+                with 30+ engineers and architects, completing the project one
+                month ahead of schedule. Built and improved CICD pipelines,
+                learned the basics of Kubernetes infrastructure management, and
+                refactored Terraform scripts for AWS deployments.
+              </span>
+            </li>
+            <li>
+              <strong class="text-black dark:text-white"
+                >Full Stack Developer</strong
+              >
+              <span class="mt-1 block">
+                Developed full-stack applications using NodeJS, ReactJS,
+                TypeScript, and PostgreSQL. Built microservices, RESTful APIs,
+                and containerized applications with Docker. Experience spans
+                e-commerce platforms, authentication services, workforce
+                management systems, and various client projects across multiple
+                industries.
+              </span>
+            </li>
+            <li>
+              <strong class="text-black dark:text-white"
+                >CRM Solutions Engineer</strong
+              >
+              <span class="mt-1 block">
+                Designed and built MarTech integrations at Etumos for Fortune
+                500 clients including Amazon Alexa. Developed Marketo
+                API-integrated applications using ReactJS, NodeJS, and AWS
+                (Lambda, DynamoDB). Created scope of work documents and
+                technical architecture diagrams that resulted in approved
+                enterprise contracts.
+              </span>
+            </li>
+            <li>
+              <strong class="text-black dark:text-white"
+                >CRM Business Analyst</strong
+              >
+              <span class="mt-1 block">
+                Specialized in marketing automation and CRM systems at Pulse
+                Secure and SolarWinds. Built NodeJS integrations between
+                LiveChat and Marketo, developed hundreds of event-triggered
+                email campaigns, and created interdepartmental reporting
+                dashboards. Trained marketing teams on CRM best practices and
+                workflow optimization.
+              </span>
+            </li>
+          </ul>
         </section>
 
         <section class="animate space-y-6">
