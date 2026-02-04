@@ -5,7 +5,7 @@ date: "01/07/2026"
 repoURL: "https://github.com/pmeaney/vendure-juniper010726/"
 ---
 
-## Exploring using Vendure for consulting projects & side hustles
+## Exploring use of Vendure for ecommerce consulting projects
 
 In the Summer of 2025, I began exploring Content Management Systems and really liked PayloadCMS, a Typescript-based framework. However, PayloadCMS's ecommerce plugin is still in beta mode as of early 2026.
 

@@ -25,7 +25,7 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
 )
   .filter((oldProject) => !oldProject.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
+  .slice(0, SITE.NUM_OLDPROJECTS_ON_HOMEPAGE);
 ---
 
 <Layout title={HOME.TITLE} description={HOME.DESCRIPTION}>
@@ -46,8 +46,9 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
               <span>
                 <p>
                   Hi, I'm Patrick Meaney. I'm a Software Engineer, with a
-                  background in: Web App Development, DevOps, Solutions-Engineer
-                  Consulting, and Digital Marketing.
+                  background in: DevOps, Technical Project Management, Web App
+                  Development, CRM Solutions Engineer Consulting, and Digital
+                  Marketing.
                 </p>
                 <p>
                   I'm currently based in San Antonio, TX and seeking a new full
@@ -57,11 +58,14 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
               </span>
               <span class="animate">
                 <p>
-                  I'm currently setting up an eCommerce website based on the
-                  Typescript framework Vendure. After that, I'll start tinkering
-                  with a LiDAR & electric motor project for a spatial scanning
-                  project. My main career interests are Software Development,
-                  Management, and Marketing.
+                  I recently customized an eCommerce template (Typescript
+                  framework Vendure) for Containerization & Github Action CICD
+                  Deployment. Next I'll add additional security features in
+                  order to prepare it for production use for my own small
+                  business and to provide eCommerce consulting to clients.
+                  <a href="https://www.pmeaney.com/projects/project-1"
+                    ><strong>Read more...</strong></a
+                  >
                 </p>
               </span>
             </article>
@@ -146,8 +150,10 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
                 Designed and built MarTech integrations at Etumos for Fortune
                 500 clients including Amazon Alexa. Developed Marketo
                 API-integrated applications using ReactJS, NodeJS, and AWS
-                (Lambda, DynamoDB). Created scope of work documents and
-                technical architecture diagrams that resulted in approved
+                (Lambda, DynamoDB)-- integrating LiveChat, TwitchTV, and
+                Industry Conference Event platforms into Marketo's database. As
+                part of this consulting work, I created scope of work documents
+                and technical architecture diagrams that resulted in approved
                 enterprise contracts.
               </span>
             </li>
@@ -208,7 +214,7 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
             <h2 class="font-semibold text-black dark:text-white">
               Older Projects from my earlier days in Software Development
             </h2>
-            <Link href="/projects"> See all Older Projects </Link>
+            <Link href="/oldProjects"> See all Older Projects </Link>
           </div>
           <ul class="not-prose flex flex-col gap-4">
             {
