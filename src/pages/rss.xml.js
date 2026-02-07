@@ -9,7 +9,7 @@ export async function GET(context) {
     (project) => !project.data.draft,
   );
 
-  const oldprojects = (await getCollection("oldproject")).filter(
+  const oldprojects = (await getCollection("oldprojects")).filter(
     (oldproject) => !oldproject.data.draft,
   );
 
