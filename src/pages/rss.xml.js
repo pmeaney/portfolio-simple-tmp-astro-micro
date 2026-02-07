@@ -9,11 +9,11 @@ export async function GET(context) {
     (project) => !project.data.draft,
   );
 
-  const oldProjects = (await getCollection("oldProject")).filter(
-    (oldProject) => !oldProject.data.draft,
+  const oldprojects = (await getCollection("oldproject")).filter(
+    (oldproject) => !oldproject.data.draft,
   );
 
-  const items = [...blog, ...projects, ...oldProjects].sort(
+  const items = [...blog, ...projects, ...oldprojects].sort(
     (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
   );
 

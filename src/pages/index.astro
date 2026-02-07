@@ -20,10 +20,10 @@ const projects: CollectionEntry<"projects">[] = (
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, SITE.NUM_PROJECTS_ON_HOMEPAGE);
 
-const oldProjects: CollectionEntry<"oldProjects">[] = (
-  await getCollection("oldProjects")
+const oldprojects: CollectionEntry<"oldprojects">[] = (
+  await getCollection("oldprojects")
 )
-  .filter((oldProject) => !oldProject.data.draft)
+  .filter((oldproject) => !oldproject.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, SITE.NUM_OLDPROJECTS_ON_HOMEPAGE);
 ---
@@ -215,13 +215,13 @@ const oldProjects: CollectionEntry<"oldProjects">[] = (
               Older Projects from my earlier days in Software Development
               (2017-2021)
             </h2>
-            <Link href="/oldProjects"> See all Older Projects </Link>
+            <Link href="/oldprojects"> See all Older Projects </Link>
           </div>
           <ul class="not-prose flex flex-col gap-4">
             {
-              oldProjects.map((oldProject) => (
+              oldprojects.map((oldproject) => (
                 <li>
-                  <ArrowCard entry={oldProject} />
+                  <ArrowCard entry={oldproject} />
                 </li>
               ))
             }

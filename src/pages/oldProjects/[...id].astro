@@ -9,53 +9,53 @@ import Link from "@components/Link.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 
 export async function getStaticPaths() {
-  const oldProjects = (await getCollection("oldProjects"))
+  const oldprojects = (await getCollection("oldprojects"))
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-  return oldProjects.map((oldProject) => ({
-    params: { id: oldProject.id },
-    props: oldProject,
+  return oldprojects.map((oldproject) => ({
+    params: { id: oldproject.id },
+    props: oldproject,
   }));
 }
-type Props = CollectionEntry<"oldProjects">;
+type Props = CollectionEntry<"oldprojects">;
 
-const oldProject = Astro.props;
-const { Content, headings } = await render(oldProject);
+const oldproject = Astro.props;
+const { Content, headings } = await render(oldproject);
 ---
 
-<Layout title={oldProject.data.title} description={oldProject.data.description}>
+<Layout title={oldproject.data.title} description={oldproject.data.description}>
   <Container>
     <div class="animate">
-      <BackToPrevious href="/oldProjects">Back to oldProjects</BackToPrevious>
+      <BackToPrevious href="/oldprojects">Back to oldprojects</BackToPrevious>
     </div>
     <div class="animate my-10 space-y-1">
       <div class="flex items-center gap-1.5">
         <div class="font-base text-sm">
-          <FormattedDate date={oldProject.data.date} />
+          <FormattedDate date={oldproject.data.date} />
         </div>
         &bull;
         {
-          oldProject.body && (
-            <div class="font-base text-sm">{readingTime(oldProject.body)}</div>
+          oldproject.body && (
+            <div class="font-base text-sm">{readingTime(oldproject.body)}</div>
           )
         }
       </div>
       <h1 class="text-3xl font-semibold text-black dark:text-white">
-        {oldProject.data.title}
+        {oldproject.data.title}
       </h1>
       {
-        (oldProject.data.demoURL || oldProject.data.repoURL) && (
+        (oldproject.data.demoURL || oldproject.data.repoURL) && (
           <nav class="flex gap-1">
-            {oldProject.data.demoURL && (
-              <Link href={oldProject.data.demoURL} external>
+            {oldproject.data.demoURL && (
+              <Link href={oldproject.data.demoURL} external>
                 demo
               </Link>
             )}
-            {oldProject.data.demoURL && oldProject.data.repoURL && (
+            {oldproject.data.demoURL && oldproject.data.repoURL && (
               <span>/</span>
             )}
-            {oldProject.data.repoURL && (
-              <Link href={oldProject.data.repoURL} external>
+            {oldproject.data.repoURL && (
+              <Link href={oldproject.data.repoURL} external>
                 repo
               </Link>
             )}

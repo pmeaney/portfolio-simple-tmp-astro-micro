@@ -22,7 +22,7 @@ While at Pulse Secure I wrote a script in NodeJS to migrate data from a webchat 
 
 ## Project Workflow Diagram
 
-![Marketo LiveChat Integration Workflow](/images-old-projects/marketo-liveChat/marketo-liveChat-basic-diagram.png)
+![Marketo LiveChat Integration Workflow](/images-old-projects/marketo-livechat/marketo-liveChat-basic-diagram.png)
 
 The diagram above shows the complete hourly workflow: from script preparation and API key refresh, through data retrieval and comparison, to conditional data uploading with throttled async queue processing.
 
@@ -36,7 +36,7 @@ Since Marketo's API constraints are what really made the project interesting, I 
 
 ## Marketo API Constraints
 
-![Marketo API Limits](/images-old-projects/marketo_api_limits.png)
+![Marketo API Limits](/images-old-projects/marketo-livechat/marketo_api_limits.png)
 
 The specific constraints I needed to work within:
 
