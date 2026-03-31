@@ -28,7 +28,8 @@ Once those items are working, I'll release v3.0 -- the Production Ready version.
       <p class="font-bold">Read more about my Vendure eCommerce project via my blog posts:</p>
       <ul>
        <li><a class="font-bold"  href="https://www.pmeaney.com/blog/01-dev-prod" target="_blank">Vendure eCommerce up and running with Dev & Prod</a></li>
-       <li><a class="font-bold" href="https://www.pmeaney.com/blog/02-migration-and-seeding" target="_blank">Vendure eCommerce migration & seeding</a></li></ul>
+       <li><a class="font-bold" href="https://www.pmeaney.com/blog/02-migration-and-seeding" target="_blank">Vendure eCommerce migration & seeding</a></li>
+       <li><a class="font-bold" href="https://www.pmeaney.com/blog/03-seeding-featured-products" target="_blank">How to setup a Featured Products collection</a></li></ul>
     </div>
   </div>
 </div>
