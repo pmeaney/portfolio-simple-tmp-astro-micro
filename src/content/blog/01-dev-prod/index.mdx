@@ -211,11 +211,20 @@ Each of the three app components — server, worker, and storefront — has its 
 Every Dockerfile opens with a strict check: if `package-lock.json` isn't present, the build fails immediately with a clear error message explaining that this is a container-first project and that lockfiles must be generated from within a Linux container. This is the enforcement mechanism for the `generate-lockfiles.sh` workflow described above — it makes it impossible to accidentally build with macOS-generated or missing lockfiles.
 
 ```dockerfile
+# Fail if package-lock.json doesn't exist
 RUN if [ ! -f package-lock.json ]; then \
+      echo ""; \
       echo "❌ ERROR: package-lock.json not found!"; \
+      echo ""; \
+      echo "This is a container-first project. Dependencies must be generated"; \
+      echo "from within a Linux container to match the production environment."; \
+      echo ""; \
+      echo "To fix this, review the instructions in the generate-lockfiles.sh"; \
+      echo "file and in the project README to understand why and how to generate"; \
+      echo "the package-lock.json according to this project's design."; \
+      echo ""; \
       exit 1; \
     fi
-RUN npm ci
 ```
 
 ### Dockerfile.server
